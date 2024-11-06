@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial, sans-serif;
+}
+
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#333;
+    color: white;
+    padding:1rem;
+
+}
+ .section{
+    display:flex;
+    list-style: none;
+
+    
+}
+li{
+    margin-left: 50px;
+}
+nav .section a{
+    color: white;
+    text-decoration: none;
+}
+nav .section a:hover{
+    color: #ffcc00;
+}
+.content{
+    display:flex;
+    padding:2rem;
+}
+
+.content .text{
+    flex: 1;
+    padding: 1rem;
+}
+#contact{
+    padding: 0px 50px;
+    background-color:#f4f4f4;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+form input,form textarea,form button{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    
+}
+nav .section li{
+    margin: 1rem;
+    text-align: center;
+}
+nav .hamburger.active + .section{
+    margin: 1rem;
+    text-align: center;
+}
+nav .section{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+nav.hamburger{
+    display: flex;
+}
+.lines{
+    width:100%;
+    position: absolute;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.lines .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    display: none;
+}
+.lines .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    display: none;   
+}

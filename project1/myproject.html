@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/myproject.css">
+</head>
+<body>
+    <nav>
+        <div id="demo">My Website</div>
+        <ul class="section">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+
+    </nav>
+    <section id="home" class="content">
+        <div class="text">
+            <h1> Welcome to Our Website</h1>
+            <p>This is a short paragraph about our services and mission. We aim to provide the best quality service to our clients</p>
+
+        </div>
+        <img src="../assets/download.jpg" alt="sample image"  width
+        =250 height=150 class="image">
+
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" onsubmit="lines(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input id="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" id="message" required></textarea>
+
+
+            <button id="submit" type="submit">submit</button>
+
+        </form>
+        
+
+    </section>
+    
+    <div class="lines">
+        <div class="success" id="success" style="display: none;">your form successfully submitted</div>
+        <div class="danger" id="danger" style="display: none;">fields can't be empty</div>
+
+    </div>
+    <script src="../java script/myproject.js"></script>
+    
+</body>
+</html>
